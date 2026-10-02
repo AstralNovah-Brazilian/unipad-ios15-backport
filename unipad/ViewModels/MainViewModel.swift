@@ -173,41 +173,96 @@ final class MainViewModel {
     }
     var modelContainer: ModelContainer?
 
-    /// Every pack folder in every workspace. A call is a full disk scan, so only reloads go through it.
-    var packFolderSource: () -> [URL] = {
-        let workspaces = WorkspaceManager.shared
-        return workspaces.availableWorkspaces.flatMap { workspaces.getUnipackFolders(workspace: $0) }
-    }
+    /// Every pack folder in every workspace. A call is a full disk scan, so only reloads go through it,
+    /// and it runs off the main actor.
+    @ObservationIgnored var packFolderSource: @Sendable () -> [URL] = { WorkspaceManager.allUnipackFolders() }
+
+    /// Reads one pack folder's info files. Only reloads go through it, and it runs off the main actor.
+    @ObservationIgnored var readPack: @Sendable (URL) -> UniPack = { UniPackFolder(rootFolder: $0).load() }
+
+    /// Set when a reload is asked for while another one is reading: the read in progress may predate
+    /// the change (an import, a background return), so one more read follows it.
+    @ObservationIgnored private var reloadRequestedAgain = false
+
+    /// Set when the read in progress is known to show a pack that no longer exists, so it is not shown.
+    @ObservationIgnored private var runningReadIsStale = false
+
+    /// The reload under way, including the follow-up read; import waits on it to find the imported pack.
+    @ObservationIgnored private var reloadTask: Task<Void, Never>?
 
     func refreshList() {
-        guard !isRefreshing else { return }
+        guard !isRefreshing else {
+            reloadRequestedAgain = true
+            return
+        }
         isRefreshing = true
 
-        Task { @MainActor in
-            var items: [UniPackItem] = []
-            let repo = modelContainer.map { UnipackRepository(modelContainer: $0) }
-
-            for folderURL in packFolderSource() {
-                let pack = UniPackFolder(rootFolder: folderURL)
-                pack.load()
-
-                let entity = try? repo?.getOrCreate(id: pack.id)
-                items.append(UniPackItem(
-                    unipack: pack,
-                    isBookmarked: entity?.bookmark ?? false,
-                    openCount: entity?.openCount ?? 0,
-                    lastOpenedAt: entity?.lastOpenedAt,
-                    createdAt: entity?.createdAt
-                ))
-            }
-
-            loadedItems = items
-            applyListFilter()
-            // The reload replaced the selected pack's object, so its detail has to be read again.
-            if let selectedItem {
-                loadDetailIfNeeded(selectedItem)
-            }
+        reloadTask = Task { @MainActor in
+            repeat {
+                reloadRequestedAgain = false
+                runningReadIsStale = false
+                let read = await Self.readPacks(
+                    listing: packFolderSource,
+                    reading: readPack,
+                    readModificationTimes: sortMethod == .downloadDate
+                )
+                if sortMethod == .downloadDate && !read.includesModificationTimes {
+                    // The sort turned to download date while this read skipped the times.
+                    reloadRequestedAgain = true
+                } else if !runningReadIsStale {
+                    publish(read.packs)
+                }
+            } while reloadRequestedAgain
             isRefreshing = false
+            reloadTask = nil
+        }
+    }
+
+    /// A pack read off the main actor, with its folder's modification time when the read took it.
+    private nonisolated struct ReadPack {
+        let pack: UniPack
+        let lastModified: TimeInterval
+    }
+
+    private nonisolated struct ListRead {
+        let packs: [ReadPack]
+        /// Only download-date reloads read file times; other sorts leave them at zero.
+        let includesModificationTimes: Bool
+    }
+
+    /// Lists folders and reads each pack off the main actor. A download-date reload takes the
+    /// newest file time once per pack. Directory dates cannot detect in-place file rewrites or
+    /// deep edits, so keys are reused only within this snapshot, never across disk reloads.
+    @concurrent private static func readPacks(
+        listing: @Sendable () -> [URL],
+        reading: @Sendable (URL) -> UniPack,
+        readModificationTimes: Bool
+    ) async -> sending ListRead {
+        let packs = listing().map { folder in
+            let pack = reading(folder)
+            return ReadPack(pack: pack, lastModified: readModificationTimes ? pack.lastModified() : 0)
+        }
+        return ListRead(packs: packs, includesModificationTimes: readModificationTimes)
+    }
+
+    /// Adds the saved record (bookmark, play count) to the packs that were read and shows them.
+    private func publish(_ packs: [ReadPack]) {
+        let repo = modelContainer.map { UnipackRepository(modelContainer: $0) }
+        loadedItems = packs.map { read in
+            let entity = try? repo?.getOrCreate(id: read.pack.id)
+            return UniPackItem(
+                unipack: read.pack,
+                isBookmarked: entity?.bookmark ?? false,
+                openCount: entity?.openCount ?? 0,
+                lastOpenedAt: entity?.lastOpenedAt,
+                createdAt: entity?.createdAt,
+                lastModified: read.lastModified
+            )
+        }
+        applyListFilter()
+        // The reload replaced the selected pack's object, so its detail has to be read again.
+        if let selectedItem {
+            loadDetailIfNeeded(selectedItem)
         }
     }
 
@@ -310,7 +365,7 @@ final class MainViewModel {
                 let bDate = b.lastOpenedAt ?? .distantPast
                 result = aDate < bDate ? -1 : (aDate > bDate ? 1 : 0)
             case .downloadDate:
-                result = a.unipack.lastModified() < b.unipack.lastModified() ? -1 : 1
+                result = a.lastModified < b.lastModified ? -1 : (a.lastModified > b.lastModified ? 1 : 0)
             }
             return result * multiplier < 0
         }
@@ -351,30 +406,68 @@ final class MainViewModel {
         refreshList()
     }
 
-    /// Matches on the imported folder so the dialog, and its play action, can never point at another pack.
-    /// Returns once the result is set, which is after the pack's detail has been read.
-    func showImportResult(forImportedFolder folder: URL) async {
-        guard let newItem = unipackItems.first(where: { $0.id == folder.path }) else { return }
-        await loadDetailIfNeeded(newItem)?.value
-        // Android shows the parser's soft errors as a warning; they were never surfaced here.
-        if let detail = newItem.unipack.errorDetail {
-            importResult = .warning(detail)
+    /// Counts import result requests, so a slower earlier one cannot replace a later result.
+    @ObservationIgnored private var importResultRequests = 0
+
+    /// Shows a finished import: the reloaded list, then the imported pack's result. The progress
+    /// stays up until the result is ready, so the screen is never left with neither.
+    func completeImport(importedFolder: URL?) async {
+        refreshList()
+        if let importedFolder {
+            // A later import owns the progress now and takes it down with its own result.
+            guard await showImportResult(forImportedFolder: importedFolder) else { return }
         } else {
-            importResult = .success(newItem.unipack)
+            // A failed completion also supersedes any earlier successful detail read.
+            importResultRequests += 1
         }
+        isImportingInProgress = false
     }
 
-    func showImportSuccessForFolder(_ folderURL: URL) {
-        let pack = UniPackFolder(rootFolder: folderURL)
-        pack.load()
-        pack.loadDetail()
+    /// A failure supersedes earlier detail reads and ends progress, including external failures
+    /// that have no subsequent completion callback.
+    func showImportError(_ message: String) {
+        importResultRequests += 1
+        importResult = .error(message)
+        isImportingInProgress = false
+    }
+
+    /// Matches on the imported folder so the dialog, and its play action, can never point at another pack.
+    /// Returns once the result is set, which is after the pack's detail has been read off the main actor,
+    /// or false without setting it when a later request came in meanwhile.
+    @discardableResult
+    func showImportResult(forImportedFolder folder: URL) async -> Bool {
+        importResultRequests += 1
+        let request = importResultRequests
+        await reloadTask?.value
+
+        let pack: UniPack
+        if let item = unipackItems.first(where: { $0.id == folder.path }) {
+            await loadDetailIfNeeded(item)?.value
+            pack = item.unipack
+        } else {
+            // Not in the shown list (a search hides it, or it went away): read it on its own.
+            pack = await Self.readWholePack(folder, reading: readPack)
+        }
+        guard request == importResultRequests else { return false }
+
         // The importer already rejected critical errors, so any detail left is a soft parser error:
-        // the pack is kept and shown as a warning, as in showImportResultForNew.
+        // the pack is kept and shown as a warning, as Android does.
         if let detail = pack.errorDetail {
             importResult = .warning(detail)
         } else {
             importResult = .success(pack)
         }
+        return true
+    }
+
+    /// Reads a pack's info and detail away from the main actor, for a pack nothing else holds.
+    @concurrent private static func readWholePack(
+        _ folder: URL,
+        reading: @Sendable (URL) -> UniPack
+    ) async -> sending UniPack {
+        let pack = reading(folder)
+        _ = pack.loadDetail()
+        return pack
     }
 
     var makeRecordRemover: (ModelContainer) -> UnipackRecordRemoving = { UnipackRepository(modelContainer: $0) }
@@ -390,12 +483,16 @@ final class MainViewModel {
         }
         do {
             try item.unipack.delete()
+            // The row goes now; a read that started before the delete would bring it back.
+            runningReadIsStale = true
+            loadedItems.removeAll { $0.id == item.id }
             try recordRemover.delete(id: item.unipack.id)
         } catch {
             logger.error("deleteItem failed for \(item.unipack.id, privacy: .public): \(error.localizedDescription, privacy: .public)")
             deleteFailed = true
         }
         selectedItem = nil
+        applyListFilter()
         refreshList()
         updateStats()
     }
@@ -410,14 +507,18 @@ struct UniPackItem: Identifiable, Hashable {
     var openCount: Int64 = 0
     var lastOpenedAt: Date?
     var createdAt: Date?
+    /// The pack folder's modification time as read with the list, so sorting never touches the disk.
+    /// Only a reload for the download-date sort reads it; it is 0 otherwise.
+    var lastModified: TimeInterval = 0
 
-    init(unipack: UniPack, isBookmarked: Bool = false, openCount: Int64 = 0, lastOpenedAt: Date? = nil, createdAt: Date? = nil) {
+    init(unipack: UniPack, isBookmarked: Bool = false, openCount: Int64 = 0, lastOpenedAt: Date? = nil, createdAt: Date? = nil, lastModified: TimeInterval = 0) {
         self.id = unipack.getPathString()
         self.unipack = unipack
         self.isBookmarked = isBookmarked
         self.openCount = openCount
         self.lastOpenedAt = lastOpenedAt
         self.createdAt = createdAt
+        self.lastModified = lastModified
     }
 
     /// Compares the saved record too: `@Observable` skips notifying for an equal value, so a
