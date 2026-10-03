@@ -35,14 +35,14 @@ iPad Pro 12,9" (1st gen)
 
 UniPad is a performance-based rhythm game that enables connection with a launchpad and allows users to create their own beatmaps using the unique "unipack" format, fostering creativity and sharing within the community. 
 
-## Features
+# Features
 
-# Tested-Working
+## Tested-Working
 - **UniPack Support**: Load and play custom UniPacks (.zip / .unipack) with sound mapping, LED animations and autoplay sequences.
 - **Custom Themes**: Supports custom skins, pad textures, phantom overlays, chain LEDs and background artwork. (some things are broken yet how theme preview, but will be fixed soon)
 - **Low-Latency Audio**: Multi-channel sound playback built for live performance.
 
-# Not Tested
+## Not Tested
 - **Launchpad & MIDI Support**: Works over USB with automatic detection for:
   - Novation Launchpad S, Mini and MK2
   - Novation Launchpad Pro (Stock firmware)
