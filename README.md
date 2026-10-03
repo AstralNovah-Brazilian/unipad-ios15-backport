@@ -30,7 +30,7 @@ iPad Pro 9,7"
 iPad Pro 12,9" (1st gen)
 ...
 
-![Screenshots](Screenshots.md)
+![UniPad-IOS15/Assets.xcassets/UniPadIcon.imageset/icon.svg](Screenshots.md)
 
 
 # Backport-specific features
