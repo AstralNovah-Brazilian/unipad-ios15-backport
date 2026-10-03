@@ -7,7 +7,7 @@ It is important to emphasize that the focus of this fork is not to reinvent UniP
 
 ## Supporting the following devices:
 
-### MacOS Catalyst (not recomended):
+### MacOS Catalyst x86/ARM (Native):
 Tested on Ventura 13
 
 ### iPhone:
