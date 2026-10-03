@@ -28,6 +28,22 @@ iPad Pro 12,9" (1st gen)
 ...
 
 
+# Backport-specific features
+
+- Support for iOS / iPadOS 15.0 and later.
+- Rebuilt to work with Xcode 15.2.
+- Custom UniPack directory selection.
+- Custom Theme directory selection.
+- UniPacks and Themes can be stored outside the app's default internal folders.
+- Improved support for importing and managing custom themes.
+- Custom theme watermark support through custom_logo.png.
+- Themes without custom_logo.png do not display a fallback watermark.
+- Responsive Play interface adapted for different iPhone and iPad screen sizes.
+- Additional quick controls available directly from the Play screen. (Like Web Version)
+- Compatibility adaptations for newer UniPad features while preserving the iOS 15 deployment target.
+- CoreMIDI and Launchpad support preserved for older iOS / iPadOS versions.
+
+
 # Oficial App Link!!!
 <a href="https://apps.apple.com/us/app/unipad/id6760479102">
   <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="50">
@@ -35,9 +51,9 @@ iPad Pro 12,9" (1st gen)
 
 UniPad is a performance-based rhythm game that enables connection with a launchpad and allows users to create their own beatmaps using the unique "unipack" format, fostering creativity and sharing within the community. 
 
-# Features
+# Features ported to iOS15
 
-## Tested-Working
+## Tested on iPad Air2 (iOS 15) and iPhone 8 plus (iOS 16)
 - **UniPack Support**: Load and play custom UniPacks (.zip / .unipack) with sound mapping, LED animations and autoplay sequences.
 - **Custom Themes**: Supports custom skins, pad textures, phantom overlays, chain LEDs and background artwork. (some things are broken yet how theme preview, but will be fixed soon)
 - **Low-Latency Audio**: Multi-channel sound playback built for live performance.
