@@ -5,9 +5,12 @@ You can expect the FULL essence of the original project, retaining its behavior,
 
 It is important to emphasize that the focus of this fork is not to reinvent UniPad, but rather to extend its lifespan and accessibility, allowing more devices to continue enjoying the app's original experience—simply adapted for iOS 15.
 
-Supporting the following devices:
+## Supporting the following devices:
 
-iPhone:
+### MacOS Catalyst (not recomended):
+Tested on Ventura 13
+
+### iPhone:
 
 iPhone 6s
 iPhone 6s Plus
@@ -19,7 +22,7 @@ iPhone X
 iPhone SE (1st gen)
 ...
 
-iPad:
+### iPad:
 iPad Air 2
 iPad mini 4
 iPad (5st gen)
