@@ -30,7 +30,7 @@ iPad Pro 9,7"
 iPad Pro 12,9" (1st gen)
 ...
 
-![Screenshots](Screenshots)
+![Screenshots](Screenshots.md)
 
 
 # Backport-specific features
