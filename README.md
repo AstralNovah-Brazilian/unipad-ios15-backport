@@ -1,10 +1,34 @@
-# UniPad iOS
+# UniPad iOS15 (BackPort)
 
+This project is a fork of Official UniPad, created with a simple goal: to make it possible to use our beloved UniPad on older devices that support iOS 15.
+You can expect the FULL essence of the original project, retaining its behavior, features, and functionality, while making the necessary adaptations to ensure backward compatibility with earlier versions of iOS.
+
+It is important to emphasize that the focus of this fork is not to reinvent UniPad, but rather to extend its lifespan and accessibility, allowing more devices to continue enjoying the app's original experience—simply adapted for iOS 15.
+
+Supporting the following devices:
+
+iPhone:
+
+iPhone 6s
+iPhone 6s Plus
+iPhone 7
+iPhone 7 Plus
+iPhone SE (1st gen)
+iPad Air 2
+iPad mini 4
+...
+
+iPad:
+iPad Air 2 and mini 4.
+...
+
+
+# Original Project Link!!!
 <a href="https://apps.apple.com/us/app/unipad/id6760479102">
   <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="50">
 </a>
 
-UniPad is a performance-based rhythm game that enables connection with a launchpad and allows users to create their own beatmaps using the unique "unipack" format, fostering creativity and sharing within the community.
+UniPad is a performance-based rhythm game that enables connection with a launchpad and allows users to create their own beatmaps using the unique "unipack" format, fostering creativity and sharing within the community. 
 
 ## Features
 
@@ -26,8 +50,8 @@ UniPad is a performance-based rhythm game that enables connection with a launchp
 
 ### Prerequisites
 
-- macOS with Xcode 15.0 or later
-- iOS / iPadOS 17.0+ device or simulator
+- macOS with Xcode 15.2 or later
+- iOS / iPadOS 15.0+ device or simulator
 
 ### Setup
 
