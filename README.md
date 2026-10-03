@@ -51,7 +51,7 @@ iPad Pro 12,9" (1st gen)
 
 UniPad is a performance-based rhythm game that enables connection with a launchpad and allows users to create their own beatmaps using the unique "unipack" format, fostering creativity and sharing within the community. 
 
-# Features ported to iOS15
+# Features port to iOS15
 
 ## Tested on iPad Air2 (iOS 15) and iPhone 8 plus (iOS 16)
 - **UniPack Support**: Load and play custom UniPacks (.zip / .unipack) with sound mapping, LED animations and autoplay sequences.
