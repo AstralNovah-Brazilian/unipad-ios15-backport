@@ -18,13 +18,13 @@
   <img src="_PrintScreen_/iPad_Air2/settings_custom_path.png" width="32%" />
 </p>
 
-# iPad Air 2 Hardware/Simulator
+# iPhone 8 Plus Hardware/Simulator
 
 <p align="center">
-  <img src="_PrintScreen_/iPhone_8_Plus/main.png" width="32%" >
-  <img src="_PrintScreen_/iPhone_8_Plus/play_default.png" width="32%" />
-  <img src="_PrintScreen_/iPhone_8_Plus/play_skin.png" width="32%" />
-  <img src="_PrintScreen_/iPhone_8_Plus/setiings_information.png" width="32%" />
-  <img src="_PrintScreen_/iPhone_8_Plus/settings_custom_path.png" width="32%" />
+  <img src="_PrintScreen_/iPhone_8_plus/main.png" width="32%" >
+  <img src="_PrintScreen_/iPhone_8_plus/play_default.png" width="32%" />
+  <img src="_PrintScreen_/iPhone_8_plus/play_skin.png" width="32%" />
+  <img src="_PrintScreen_/iPhone_8_plus/setiings_information.png" width="32%" />
+  <img src="_PrintScreen_/iPhone_8_plus/settings_custom_path.png" width="32%" />
 </p>
 
