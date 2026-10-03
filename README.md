@@ -11,7 +11,6 @@ It is important to emphasize that the focus of this fork is not to reinvent UniP
 Tested on Ventura 13
 
 ### iPhone:
-
 iPhone 6s
 iPhone 6s Plus
 iPhone 7
@@ -62,12 +61,12 @@ UniPad is a performance-based rhythm game that enables connection with a launchp
 
 # Features port to iOS15
 
-## Tested on iPad Air2 (iOS 15) and iPhone 8 plus (iOS 16)
+## Tested on iPad Air2 (iOS 15) and iPhone 8 plus (iOS 16) - Real Hardware
 - **UniPack Support**: Load and play custom UniPacks (.zip / .unipack) with sound mapping, LED animations and autoplay sequences.
 - **Custom Themes**: Supports custom skins, pad textures, phantom overlays, chain LEDs and background artwork. (some things are broken yet how theme preview, but will be fixed soon)
 - **Low-Latency Audio**: Multi-channel sound playback built for live performance.
 
-## Not Tested
+## Not Tested (I don't have Launchpad Hardware for testing)
 - **Launchpad & MIDI Support**: Works over USB with automatic detection for:
   - Novation Launchpad S, Mini and MK2
   - Novation Launchpad Pro (Stock firmware)
