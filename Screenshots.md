@@ -9,7 +9,7 @@
   <img src="_PrintScreen_/Catalyst/settings_custom_path.png" width="32%" />
 </p>
 
-# iPad Air 2 Hardware/Simulator
+# iPad Air 2 Hardware/Simulator (Captured on Hardware iOS15)
 
 <p align="center">
   <img src="_PrintScreen_/iPad_Air2/main.png" width="32%" >
@@ -20,7 +20,7 @@
   <img src="_PrintScreen_/iPad_Air2/settings_custom_path.png" width="32%" />
 </p>
 
-# iPhone 8 Plus Hardware/Simulator
+# iPhone 8 Plus Hardware/Simulator (Captured on Hardware iOS16)
 
 <p align="center">
   <img src="_PrintScreen_/iPhone_8_plus/main.png" width="32%" >
