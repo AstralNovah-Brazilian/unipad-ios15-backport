@@ -1,6 +1,6 @@
 # UniPad iOS15 (BackPort)
 
-This project is a fork of Official UniPad, created with a simple goal: to make it possible to use our beloved UniPad on older devices that support iOS 15.
+This project is a fork of Oficial UniPad, created with a simple goal: to make it possible to use our beloved UniPad on older devices that support iOS 15.
 You can expect the FULL essence of the original project, retaining its behavior, features, and functionality, while making the necessary adaptations to ensure backward compatibility with earlier versions of iOS.
 
 It is important to emphasize that the focus of this fork is not to reinvent UniPad, but rather to extend its lifespan and accessibility, allowing more devices to continue enjoying the app's original experience—simply adapted for iOS 15.
@@ -13,17 +13,22 @@ iPhone 6s
 iPhone 6s Plus
 iPhone 7
 iPhone 7 Plus
+iPhone 8
+iPhone 8 Plus
+iPhone X
 iPhone SE (1st gen)
-iPad Air 2
-iPad mini 4
 ...
 
 iPad:
-iPad Air 2 and mini 4.
+iPad Air 2
+iPad mini 4
+iPad (5st gen)
+iPad Pro 9,7"
+iPad Pro 12,9" (1st gen)
 ...
 
 
-# Original Project Link!!!
+# Oficial App Link!!!
 <a href="https://apps.apple.com/us/app/unipad/id6760479102">
   <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="50">
 </a>
@@ -32,7 +37,12 @@ UniPad is a performance-based rhythm game that enables connection with a launchp
 
 ## Features
 
+# Tested-Working
 - **UniPack Support**: Load and play custom UniPacks (.zip / .unipack) with sound mapping, LED animations and autoplay sequences.
+- **Custom Themes**: Supports custom skins, pad textures, phantom overlays, chain LEDs and background artwork. (some things are broken yet how theme preview, but will be fixed soon)
+- **Low-Latency Audio**: Multi-channel sound playback built for live performance.
+
+# Not Tested
 - **Launchpad & MIDI Support**: Works over USB with automatic detection for:
   - Novation Launchpad S, Mini and MK2
   - Novation Launchpad Pro (Stock firmware)
@@ -42,69 +52,23 @@ UniPad is a performance-based rhythm game that enables connection with a launchp
   - Midi Fighter 64
   - Mystrix
   - Generic Master Keyboard
-- **Custom Themes**: Supports custom skins, pad textures, phantom overlays, chain LEDs and background artwork.
-- **Low-Latency Audio**: Multi-channel sound playback built for live performance.
-- Built with SwiftUI, SwiftData and CoreMIDI.
-
-## Getting Started
+  
+- Built with SwiftUI and CoreMIDI. 
 
 ### Prerequisites
 
-- macOS with Xcode 15.2 or later
+- macOS Ventura 13 with Xcode 15.2 or later
 - iOS / iPadOS 15.0+ device or simulator
 
-### Setup
-
-1. Clone the repo:
-```bash
-git clone https://github.com/kimjisub/unipad-ios.git
-cd unipad-ios
-```
-
-2. Open the Xcode project:
-```bash
-open unipad.xcodeproj
-```
-
-3. Select your target device or simulator and hit **Run** (`Cmd + R`).
-
-## Pull request checks
-
-Every pull request runs one **iOS checks / Build and unit tests** job on a
-GitHub-hosted macOS 15 runner with Xcode 26.3. It builds Release for iOS
-Simulator without signing and runs the `unipadTests` target in Debug on an
-available iPhone simulator. UI tests are excluded. Dependencies use the
-committed `Package.resolved` versions.
-
-The job needs no repository secrets or signing credentials. It replaces the
-Firebase plist only in its disposable checkout with clearly fake values from
-`ci/firebase_fixture.py`; the existing unit-test runtime uses local Firebase
-stubs. App configuration, version, and behavior in normal builds are unchanged.
-Build logs and the test result bundle are available in the run's
-`ios-check-results` artifact for seven days. This workflow does not upload to
-a store or change required checks.
-
-## Connecting a Launchpad
-
-1. Connect your Launchpad to your device using a USB adapter or USB-C cable.
-2. Open UniPad. The app scans and connects to supported hardware automatically.
-3. If you want to change drivers manually, you can pick one from the in-app MIDI menu.
-
-## Project Layout
-
-- `unipad/App`: App entry point and navigation routing
-- `unipad/Services/MIDI`: CoreMIDI communication, device drivers and SysEx handling
-- `unipad/Services/Audio`: Sound playback engine and audio pool
-- `unipad/Services/LED`: LED frame runner and light mapping
-- `unipad/Services/Theme`: Theme loader and zip extraction
-- `unipad/Database`: SwiftData models for saved unipacks
-- `unipad/Views`: UI screens (grid player, store, settings, theme picker, midi picker)
+If you want to delve deeper into the project, I recommend checking out the Oficial project preferably :)
 
 ## License
 
 This project is licensed under the [GNU Lesser General Public License v2.1](LICENSE).
 
 ## Credits
+ 
+- Only use this project if you have a dead device on iOS 15, otherwise, use the original project. ALWAYS!
 
 - Original UniPad app and concept by [Kim Ji-Sub](https://github.com/kimjisub).
 - Thanks to the UniPack creators and custom firmware developers.
