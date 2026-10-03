@@ -23,7 +23,7 @@
 <p align="center">
   <img src="_PrintScreen_/iPhone_8_plus/main.png" width="32%" >
   <img src="_PrintScreen_/iPhone_8_plus/play_default.png" width="32%" />
-  <img src="_PrintScreen_/iPhone_8_plus/play_skin.png" width="32%" />
+  <img src="_PrintScreen_/iPhone_8_plus/play_sskin.png" width="32%" />
   <img src="_PrintScreen_/iPhone_8_plus/setiings_information.png" width="32%" />
   <img src="_PrintScreen_/iPhone_8_plus/settings_custom_path.png" width="32%" />
 </p>
