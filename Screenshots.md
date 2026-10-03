@@ -1,4 +1,4 @@
-# Mac Catalyst
+# Mac Catalyst - MacOS Ventura 13
 
 <p align="center">
   <img src="_PrintScreen_/Catalyst/main.png" width="32%" >
