@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5B269030-3AB2-4E27-A6B7-19FF4564DC4F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9E63B5B-E748-48E5-887D-F2D7E93ABD68"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Downloads/unipad-ios-main/unipad/Views/Play/PadGridUIView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "A9E63B5B-E748-48E5-887D-F2D7E93ABD68 - 6a815b1fdc9189fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniPad.PadGridUIView.__deallocating_deinit"
+                  moduleName = "UniPad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/inascx/Downloads/unipad-ios-main/unipad/Views/Play/PadGridUIView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "A9E63B5B-E748-48E5-887D-F2D7E93ABD68 - 6a815b1fdc9189fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UniPad.PadGridUIView.__deallocating_deinit"
+                  moduleName = "UniPad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/inascx/Downloads/unipad-ios-main/unipad/Views/Play/PadGridUIView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

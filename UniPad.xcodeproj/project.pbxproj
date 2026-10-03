@@ -1,0 +1,1271 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE15C15C306FB50200002400 /* WorkspaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE15C15B306FB50200002400 /* WorkspaceManager.swift */; };
+		AE15C15E306FB56E00002400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE15C15D306FB56D00002400 /* Assets.xcassets */; };
+		AEC10C3E306685A000BB8329 /* UniPad_IOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC10C3D306685A000BB8329 /* UniPad_IOS15App.swift */; };
+		AEC10C40306685A000BB8329 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC10C3F306685A000BB8329 /* ContentView.swift */; };
+		AEC10C4F306685A200BB8329 /* UniPad_IOS15Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC10C4E306685A200BB8329 /* UniPad_IOS15Tests.swift */; };
+		AEC10C59306685A200BB8329 /* UniPad_IOS15UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC10C58306685A200BB8329 /* UniPad_IOS15UITests.swift */; };
+		AEC10C5B306685A200BB8329 /* UniPad_IOS15UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC10C5A306685A200BB8329 /* UniPad_IOS15UITestsLaunchTests.swift */; };
+		AEC4D9F5306F5C5C00C7B189 /* UniPackImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9CB306F5C5B00C7B189 /* UniPackImporter.swift */; };
+		AEC4D9F6306F5C5C00C7B189 /* ZipHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9CC306F5C5B00C7B189 /* ZipHelper.swift */; };
+		AEC4D9F7306F5C5C00C7B189 /* ChainObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9CD306F5C5B00C7B189 /* ChainObserver.swift */; };
+		AEC4D9F8306F5C5C00C7B189 /* LedRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9CF306F5C5B00C7B189 /* LedRunner.swift */; };
+		AEC4D9F9306F5C5C00C7B189 /* ChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9D0306F5C5B00C7B189 /* ChannelManager.swift */; };
+		AEC4D9FA306F5C5C00C7B189 /* MidiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9D2306F5C5B00C7B189 /* MidiManager.swift */; };
+		AEC4D9FB306F5C5C00C7B189 /* LaunchpadXDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9D4306F5C5B00C7B189 /* LaunchpadXDriver.swift */; };
+		AEC4D9FC306F5C5C00C7B189 /* LaunchpadProDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9D5306F5C5B00C7B189 /* LaunchpadProDriver.swift */; };
+		AEC4D9FD306F5C5C00C7B189 /* MasterKeyboardDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9D6306F5C5B00C7B189 /* MasterKeyboardDriver.swift */; };
+		AEC4D9FE306F5C5C00C7B189 /* LaunchpadMK2Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9D7306F5C5B00C7B189 /* LaunchpadMK2Driver.swift */; };
+		AEC4D9FF306F5C5C00C7B189 /* LaunchpadProCFWDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9D8306F5C5B00C7B189 /* LaunchpadProCFWDriver.swift */; };
+		AEC4DA00306F5C5C00C7B189 /* MidiFighterDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9D9306F5C5B00C7B189 /* MidiFighterDriver.swift */; };
+		AEC4DA01306F5C5C00C7B189 /* MatrixDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9DA306F5C5B00C7B189 /* MatrixDriver.swift */; };
+		AEC4DA02306F5C5C00C7B189 /* LaunchpadCoreCFWDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9DB306F5C5B00C7B189 /* LaunchpadCoreCFWDriver.swift */; };
+		AEC4DA03306F5C5C00C7B189 /* LaunchpadMiniMK3Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9DC306F5C5B00C7B189 /* LaunchpadMiniMK3Driver.swift */; };
+		AEC4DA04306F5C5C00C7B189 /* LaunchpadProMK3Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9DD306F5C5B00C7B189 /* LaunchpadProMK3Driver.swift */; };
+		AEC4DA05306F5C5C00C7B189 /* GenericDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9DE306F5C5B00C7B189 /* GenericDriver.swift */; };
+		AEC4DA06306F5C5C00C7B189 /* LaunchpadSDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9DF306F5C5B00C7B189 /* LaunchpadSDriver.swift */; };
+		AEC4DA07306F5C5C00C7B189 /* MidiBannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9E0306F5C5B00C7B189 /* MidiBannerCoordinator.swift */; };
+		AEC4DA08306F5C5C00C7B189 /* MidiDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9E1306F5C5C00C7B189 /* MidiDriver.swift */; };
+		AEC4DA09306F5C5C00C7B189 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9E2306F5C5C00C7B189 /* FileManager+Extensions.swift */; };
+		AEC4DA0A306F5C5C00C7B189 /* UniPackDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9E3306F5C5C00C7B189 /* UniPackDownloader.swift */; };
+		AEC4DA0B306F5C5C00C7B189 /* AutoPlayRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9E5306F5C5C00C7B189 /* AutoPlayRunner.swift */; };
+		AEC4DA0C306F5C5C00C7B189 /* UniPackAutoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9E6306F5C5C00C7B189 /* UniPackAutoMapper.swift */; };
+		AEC4DA0D306F5C5C00C7B189 /* ObjCExceptionCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9E9306F5C5C00C7B189 /* ObjCExceptionCatch.swift */; };
+		AEC4DA0E306F5C5C00C7B189 /* AudioSessionGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9EA306F5C5C00C7B189 /* AudioSessionGate.swift */; };
+		AEC4DA0F306F5C5C00C7B189 /* UPObjCExceptionCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9EB306F5C5C00C7B189 /* UPObjCExceptionCatcher.m */; };
+		AEC4DA10306F5C5C00C7B189 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9EC306F5C5C00C7B189 /* SoundEngine.swift */; };
+		AEC4DA11306F5C5C00C7B189 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9EE306F5C5C00C7B189 /* ThemeManager.swift */; };
+		AEC4DA12306F5C5C00C7B189 /* ThemeResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9EF306F5C5C00C7B189 /* ThemeResources.swift */; };
+		AEC4DA13306F5C5C00C7B189 /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9F0306F5C5C00C7B189 /* PreferenceManager.swift */; };
+		AEC4DA14306F5C5C00C7B189 /* UsageAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9F2306F5C5C00C7B189 /* UsageAnalytics.swift */; };
+		AEC4DA15306F5C5C00C7B189 /* PlaySessionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4D9F3306F5C5C00C7B189 /* PlaySessionTracker.swift */; };
+		AEC4DA28306F5D2900C7B189 /* PlatformImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA22306F5D2900C7B189 /* PlatformImage.swift */; };
+		AEC4DA29306F5D2900C7B189 /* TraceLogText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA23306F5D2900C7B189 /* TraceLogText.swift */; };
+		AEC4DA2A306F5D2900C7B189 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA24306F5D2900C7B189 /* AppColors.swift */; };
+		AEC4DA2B306F5D2900C7B189 /* MPVolumeViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA25306F5D2900C7B189 /* MPVolumeViewHelper.swift */; };
+		AEC4DA2C306F5D2900C7B189 /* LaunchpadColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA26306F5D2900C7B189 /* LaunchpadColor.swift */; };
+		AEC4DA2D306F5D2900C7B189 /* NSLock+DeadlockDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA27306F5D2900C7B189 /* NSLock+DeadlockDetection.swift */; };
+		AEC4DA34306F5D3D00C7B189 /* UniPackFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA2F306F5D3D00C7B189 /* UniPackFolder.swift */; };
+		AEC4DA35306F5D3D00C7B189 /* LedAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA30306F5D3D00C7B189 /* LedAnimation.swift */; };
+		AEC4DA36306F5D3D00C7B189 /* UniPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA31306F5D3D00C7B189 /* UniPack.swift */; };
+		AEC4DA37306F5D3D00C7B189 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA32306F5D3D00C7B189 /* Sound.swift */; };
+		AEC4DA38306F5D3D00C7B189 /* AutoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA33306F5D3D00C7B189 /* AutoPlay.swift */; };
+		AEC4DA66306F633B00C7B189 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA3B306F633A00C7B189 /* SettingsViewModel.swift */; };
+		AEC4DA67306F633B00C7B189 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA3C306F633A00C7B189 /* MainViewModel.swift */; };
+		AEC4DA68306F633B00C7B189 /* StorageSetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA3D306F633B00C7B189 /* StorageSetupViewModel.swift */; };
+		AEC4DA69306F633B00C7B189 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA3E306F633B00C7B189 /* StoreViewModel.swift */; };
+		AEC4DA6A306F633B00C7B189 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA3F306F633B00C7B189 /* ThemeViewModel.swift */; };
+		AEC4DA6B306F633B00C7B189 /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA40306F633B00C7B189 /* PlayViewModel.swift */; };
+		AEC4DA6C306F633B00C7B189 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA43306F633B00C7B189 /* SettingsView.swift */; };
+		AEC4DA6D306F633B00C7B189 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA45306F633B00C7B189 /* SplashView.swift */; };
+		AEC4DA6E306F633B00C7B189 /* StorageSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA47306F633B00C7B189 /* StorageSetupView.swift */; };
+		AEC4DA6F306F633B00C7B189 /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA49306F633B00C7B189 /* TransferView.swift */; };
+		AEC4DA70306F633B00C7B189 /* MidiConnectionBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA4B306F633B00C7B189 /* MidiConnectionBannerView.swift */; };
+		AEC4DA71306F633B00C7B189 /* TemporaryStoreNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA4C306F633B00C7B189 /* TemporaryStoreNoticeView.swift */; };
+		AEC4DA72306F633B00C7B189 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA4D306F633B00C7B189 /* SearchBar.swift */; };
+		AEC4DA73306F633B00C7B189 /* MarqueeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA4E306F633B00C7B189 /* MarqueeText.swift */; };
+		AEC4DA74306F633B00C7B189 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA4F306F633B00C7B189 /* LoadingView.swift */; };
+		AEC4DA75306F633B00C7B189 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA51306F633B00C7B189 /* ThemeView.swift */; };
+		AEC4DA76306F633B00C7B189 /* MidiSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA53306F633B00C7B189 /* MidiSelectView.swift */; };
+		AEC4DA77306F633B00C7B189 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA56306F633B00C7B189 /* PlayView.swift */; };
+		AEC4DA78306F633B00C7B189 /* ChainColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA57306F633B00C7B189 /* ChainColumnView.swift */; };
+		AEC4DA79306F633B00C7B189 /* PlayOptionPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA58306F633B00C7B189 /* PlayOptionPanel.swift */; };
+		AEC4DA7A306F633B00C7B189 /* PadGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA59306F633B00C7B189 /* PadGridView.swift */; };
+		AEC4DA7B306F633B00C7B189 /* PadGridUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA5A306F633B00C7B189 /* PadGridUIView.swift */; };
+		AEC4DA7C306F633B00C7B189 /* UnipackListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA5C306F633B00C7B189 /* UnipackListItemView.swift */; };
+		AEC4DA7D306F633B00C7B189 /* MainTotalPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA5D306F633B00C7B189 /* MainTotalPanel.swift */; };
+		AEC4DA7E306F633B00C7B189 /* ImportResultDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA5E306F633B00C7B189 /* ImportResultDialog.swift */; };
+		AEC4DA7F306F633B00C7B189 /* MainPackPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA5F306F633B00C7B189 /* MainPackPanel.swift */; };
+		AEC4DA80306F633B00C7B189 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA60306F633B00C7B189 /* MainView.swift */; };
+		AEC4DA81306F633B00C7B189 /* ImportByUrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA62306F633B00C7B189 /* ImportByUrlView.swift */; };
+		AEC4DA82306F633B00C7B189 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA64306F633B00C7B189 /* StoreView.swift */; };
+		AEC4DA86306F638100C7B189 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA84306F638100C7B189 /* AppRouter.swift */; };
+		AEC4DA87306F638100C7B189 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA85306F638100C7B189 /* Route.swift */; };
+		AEC4DAA0306F63C100C7B189 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEC4DA89306F63C100C7B189 /* Localizable.strings */; };
+		AEC4DAA1306F63C100C7B189 /* UniPadAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA92306F63C100C7B189 /* UniPadAPI.swift */; };
+		AEC4DAA3306F63C200C7B189 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEC4DA96306F63C100C7B189 /* Localizable.strings */; };
+		AEC4DAAA306F63D000C7B189 /* UnipackRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DAA5306F63D000C7B189 /* UnipackRepository.swift */; };
+		AEC4DAAB306F63D000C7B189 /* UnipackEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DAA6306F63D000C7B189 /* UnipackEntity.swift */; };
+		AEC4DAAC306F63D000C7B189 /* UnipadSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DAA7306F63D000C7B189 /* UnipadSchema.swift */; };
+		AEC4DAAD306F63D000C7B189 /* ModelStoreStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DAA8306F63D000C7B189 /* ModelStoreStatus.swift */; };
+		AEC4DAAE306F63D000C7B189 /* ModelContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DAA9306F63D000C7B189 /* ModelContainerFactory.swift */; };
+		AEC4DAB5306F641100C7B189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEC4DAB3306F641100C7B189 /* GoogleService-Info.plist */; };
+		AEF57CB8306FACAC0042E59D /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4DA93306F63C100C7B189 /* FirebaseManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEC10C4B306685A200BB8329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC10C32306685A000BB8329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC10C39306685A000BB8329;
+			remoteInfo = "UniPad-IOS15";
+		};
+		AEC10C55306685A200BB8329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC10C32306685A000BB8329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC10C39306685A000BB8329;
+			remoteInfo = "UniPad-IOS15";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE15C15B306FB50200002400 /* WorkspaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkspaceManager.swift; sourceTree = "<group>"; };
+		AE15C15D306FB56D00002400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEC10C3A306685A000BB8329 /* UniPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC10C3D306685A000BB8329 /* UniPad_IOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPad_IOS15App.swift; sourceTree = "<group>"; };
+		AEC10C3F306685A000BB8329 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AEC10C44306685A200BB8329 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AEC10C4A306685A200BB8329 /* UniPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC10C4E306685A200BB8329 /* UniPad_IOS15Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPad_IOS15Tests.swift; sourceTree = "<group>"; };
+		AEC10C54306685A200BB8329 /* UniPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC10C58306685A200BB8329 /* UniPad_IOS15UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPad_IOS15UITests.swift; sourceTree = "<group>"; };
+		AEC10C5A306685A200BB8329 /* UniPad_IOS15UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPad_IOS15UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AEC4D9CB306F5C5B00C7B189 /* UniPackImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniPackImporter.swift; sourceTree = "<group>"; };
+		AEC4D9CC306F5C5B00C7B189 /* ZipHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipHelper.swift; sourceTree = "<group>"; };
+		AEC4D9CD306F5C5B00C7B189 /* ChainObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainObserver.swift; sourceTree = "<group>"; };
+		AEC4D9CF306F5C5B00C7B189 /* LedRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedRunner.swift; sourceTree = "<group>"; };
+		AEC4D9D0306F5C5B00C7B189 /* ChannelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelManager.swift; sourceTree = "<group>"; };
+		AEC4D9D2306F5C5B00C7B189 /* MidiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiManager.swift; sourceTree = "<group>"; };
+		AEC4D9D4306F5C5B00C7B189 /* LaunchpadXDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadXDriver.swift; sourceTree = "<group>"; };
+		AEC4D9D5306F5C5B00C7B189 /* LaunchpadProDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadProDriver.swift; sourceTree = "<group>"; };
+		AEC4D9D6306F5C5B00C7B189 /* MasterKeyboardDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterKeyboardDriver.swift; sourceTree = "<group>"; };
+		AEC4D9D7306F5C5B00C7B189 /* LaunchpadMK2Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadMK2Driver.swift; sourceTree = "<group>"; };
+		AEC4D9D8306F5C5B00C7B189 /* LaunchpadProCFWDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadProCFWDriver.swift; sourceTree = "<group>"; };
+		AEC4D9D9306F5C5B00C7B189 /* MidiFighterDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiFighterDriver.swift; sourceTree = "<group>"; };
+		AEC4D9DA306F5C5B00C7B189 /* MatrixDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixDriver.swift; sourceTree = "<group>"; };
+		AEC4D9DB306F5C5B00C7B189 /* LaunchpadCoreCFWDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadCoreCFWDriver.swift; sourceTree = "<group>"; };
+		AEC4D9DC306F5C5B00C7B189 /* LaunchpadMiniMK3Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadMiniMK3Driver.swift; sourceTree = "<group>"; };
+		AEC4D9DD306F5C5B00C7B189 /* LaunchpadProMK3Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadProMK3Driver.swift; sourceTree = "<group>"; };
+		AEC4D9DE306F5C5B00C7B189 /* GenericDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDriver.swift; sourceTree = "<group>"; };
+		AEC4D9DF306F5C5B00C7B189 /* LaunchpadSDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadSDriver.swift; sourceTree = "<group>"; };
+		AEC4D9E0306F5C5B00C7B189 /* MidiBannerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiBannerCoordinator.swift; sourceTree = "<group>"; };
+		AEC4D9E1306F5C5C00C7B189 /* MidiDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiDriver.swift; sourceTree = "<group>"; };
+		AEC4D9E2306F5C5C00C7B189 /* FileManager+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
+		AEC4D9E3306F5C5C00C7B189 /* UniPackDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniPackDownloader.swift; sourceTree = "<group>"; };
+		AEC4D9E5306F5C5C00C7B189 /* AutoPlayRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoPlayRunner.swift; sourceTree = "<group>"; };
+		AEC4D9E6306F5C5C00C7B189 /* UniPackAutoMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniPackAutoMapper.swift; sourceTree = "<group>"; };
+		AEC4D9E8306F5C5C00C7B189 /* UPObjCExceptionCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPObjCExceptionCatcher.h; sourceTree = "<group>"; };
+		AEC4D9E9306F5C5C00C7B189 /* ObjCExceptionCatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCExceptionCatch.swift; sourceTree = "<group>"; };
+		AEC4D9EA306F5C5C00C7B189 /* AudioSessionGate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSessionGate.swift; sourceTree = "<group>"; };
+		AEC4D9EB306F5C5C00C7B189 /* UPObjCExceptionCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPObjCExceptionCatcher.m; sourceTree = "<group>"; };
+		AEC4D9EC306F5C5C00C7B189 /* SoundEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
+		AEC4D9EE306F5C5C00C7B189 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		AEC4D9EF306F5C5C00C7B189 /* ThemeResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeResources.swift; sourceTree = "<group>"; };
+		AEC4D9F0306F5C5C00C7B189 /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
+		AEC4D9F2306F5C5C00C7B189 /* UsageAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsageAnalytics.swift; sourceTree = "<group>"; };
+		AEC4D9F3306F5C5C00C7B189 /* PlaySessionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySessionTracker.swift; sourceTree = "<group>"; };
+		AEC4DA22306F5D2900C7B189 /* PlatformImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformImage.swift; sourceTree = "<group>"; };
+		AEC4DA23306F5D2900C7B189 /* TraceLogText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceLogText.swift; sourceTree = "<group>"; };
+		AEC4DA24306F5D2900C7B189 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		AEC4DA25306F5D2900C7B189 /* MPVolumeViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPVolumeViewHelper.swift; sourceTree = "<group>"; };
+		AEC4DA26306F5D2900C7B189 /* LaunchpadColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadColor.swift; sourceTree = "<group>"; };
+		AEC4DA27306F5D2900C7B189 /* NSLock+DeadlockDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLock+DeadlockDetection.swift"; sourceTree = "<group>"; };
+		AEC4DA2F306F5D3D00C7B189 /* UniPackFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniPackFolder.swift; sourceTree = "<group>"; };
+		AEC4DA30306F5D3D00C7B189 /* LedAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedAnimation.swift; sourceTree = "<group>"; };
+		AEC4DA31306F5D3D00C7B189 /* UniPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniPack.swift; sourceTree = "<group>"; };
+		AEC4DA32306F5D3D00C7B189 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		AEC4DA33306F5D3D00C7B189 /* AutoPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoPlay.swift; sourceTree = "<group>"; };
+		AEC4DA3B306F633A00C7B189 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		AEC4DA3C306F633A00C7B189 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		AEC4DA3D306F633B00C7B189 /* StorageSetupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageSetupViewModel.swift; sourceTree = "<group>"; };
+		AEC4DA3E306F633B00C7B189 /* StoreViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		AEC4DA3F306F633B00C7B189 /* ThemeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
+		AEC4DA40306F633B00C7B189 /* PlayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		AEC4DA43306F633B00C7B189 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AEC4DA45306F633B00C7B189 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		AEC4DA47306F633B00C7B189 /* StorageSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageSetupView.swift; sourceTree = "<group>"; };
+		AEC4DA49306F633B00C7B189 /* TransferView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
+		AEC4DA4B306F633B00C7B189 /* MidiConnectionBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiConnectionBannerView.swift; sourceTree = "<group>"; };
+		AEC4DA4C306F633B00C7B189 /* TemporaryStoreNoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemporaryStoreNoticeView.swift; sourceTree = "<group>"; };
+		AEC4DA4D306F633B00C7B189 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		AEC4DA4E306F633B00C7B189 /* MarqueeText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeText.swift; sourceTree = "<group>"; };
+		AEC4DA4F306F633B00C7B189 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AEC4DA51306F633B00C7B189 /* ThemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		AEC4DA53306F633B00C7B189 /* MidiSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiSelectView.swift; sourceTree = "<group>"; };
+		AEC4DA56306F633B00C7B189 /* PlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		AEC4DA57306F633B00C7B189 /* ChainColumnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainColumnView.swift; sourceTree = "<group>"; };
+		AEC4DA58306F633B00C7B189 /* PlayOptionPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayOptionPanel.swift; sourceTree = "<group>"; };
+		AEC4DA59306F633B00C7B189 /* PadGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PadGridView.swift; sourceTree = "<group>"; };
+		AEC4DA5A306F633B00C7B189 /* PadGridUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PadGridUIView.swift; sourceTree = "<group>"; };
+		AEC4DA5C306F633B00C7B189 /* UnipackListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnipackListItemView.swift; sourceTree = "<group>"; };
+		AEC4DA5D306F633B00C7B189 /* MainTotalPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTotalPanel.swift; sourceTree = "<group>"; };
+		AEC4DA5E306F633B00C7B189 /* ImportResultDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportResultDialog.swift; sourceTree = "<group>"; };
+		AEC4DA5F306F633B00C7B189 /* MainPackPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPackPanel.swift; sourceTree = "<group>"; };
+		AEC4DA60306F633B00C7B189 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AEC4DA62306F633B00C7B189 /* ImportByUrlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportByUrlView.swift; sourceTree = "<group>"; };
+		AEC4DA64306F633B00C7B189 /* StoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		AEC4DA84306F638100C7B189 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		AEC4DA85306F638100C7B189 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		AEC4DA8A306F63C100C7B189 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA8B306F63C100C7B189 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AEC4DA8C306F63C100C7B189 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA8D306F63C100C7B189 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA8E306F63C100C7B189 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA8F306F63C100C7B189 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA90306F63C100C7B189 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA92306F63C100C7B189 /* UniPadAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniPadAPI.swift; sourceTree = "<group>"; };
+		AEC4DA93306F63C100C7B189 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		AEC4DA94306F63C100C7B189 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA95306F63C100C7B189 /* fil */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fil; path = fil.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA96306F63C100C7B189 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA97306F63C100C7B189 /* my */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = my; path = my.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA98306F63C100C7B189 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA99306F63C100C7B189 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AEC4DA9A306F63C100C7B189 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA9B306F63C100C7B189 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA9C306F63C100C7B189 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA9D306F63C100C7B189 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA9E306F63C100C7B189 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DA9F306F63C100C7B189 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEC4DAA5306F63D000C7B189 /* UnipackRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnipackRepository.swift; sourceTree = "<group>"; };
+		AEC4DAA6306F63D000C7B189 /* UnipackEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnipackEntity.swift; sourceTree = "<group>"; };
+		AEC4DAA7306F63D000C7B189 /* UnipadSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnipadSchema.swift; sourceTree = "<group>"; };
+		AEC4DAA8306F63D000C7B189 /* ModelStoreStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelStoreStatus.swift; sourceTree = "<group>"; };
+		AEC4DAA9306F63D000C7B189 /* ModelContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelContainerFactory.swift; sourceTree = "<group>"; };
+		AEC4DAB0306F63DC00C7B189 /* unipadApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unipadApp.swift; sourceTree = "<group>"; };
+		AEC4DAB2306F641100C7B189 /* unipad-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "unipad-Bridging-Header.h"; sourceTree = "<group>"; };
+		AEC4DAB3306F641100C7B189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AEC4DAB4306F641100C7B189 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEC10C37306685A000BB8329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC10C47306685A200BB8329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC10C51306685A200BB8329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEC10C31306685A000BB8329 = {
+			isa = PBXGroup;
+			children = (
+				AEC10C3C306685A000BB8329 /* UniPad-IOS15 */,
+				AEC10C4D306685A200BB8329 /* UniPad-IOS15Tests */,
+				AEC10C57306685A200BB8329 /* UniPad-IOS15UITests */,
+				AEC10C3B306685A000BB8329 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEC10C3B306685A000BB8329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEC10C3A306685A000BB8329 /* UniPad.app */,
+				AEC10C4A306685A200BB8329 /* UniPadTests.xctest */,
+				AEC10C54306685A200BB8329 /* UniPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEC10C3C306685A000BB8329 /* UniPad-IOS15 */ = {
+			isa = PBXGroup;
+			children = (
+				AE15C15D306FB56D00002400 /* Assets.xcassets */,
+				AEC4DA3A306F633A00C7B189 /* ViewModels */,
+				AEC4DA41306F633B00C7B189 /* Views */,
+				AEC4DA91306F63C100C7B189 /* Network */,
+				AEC4DAAF306F63DC00C7B189 /* App */,
+				AEC4DAA4306F63D000C7B189 /* Database */,
+				AEC4DA88306F63C100C7B189 /* Resources */,
+				AEC4DA83306F638100C7B189 /* Navigation */,
+				AEC4DA2E306F5D3D00C7B189 /* Models */,
+				AEC4DA21306F5D2900C7B189 /* Utils */,
+				AEC4D9CA306F5C5B00C7B189 /* Services */,
+				AEC4DAB3306F641100C7B189 /* GoogleService-Info.plist */,
+				AEC4DAB4306F641100C7B189 /* Info.plist */,
+				AEC4DAB2306F641100C7B189 /* unipad-Bridging-Header.h */,
+				AEC10C3D306685A000BB8329 /* UniPad_IOS15App.swift */,
+				AEC10C3F306685A000BB8329 /* ContentView.swift */,
+				AEC10C43306685A200BB8329 /* Preview Content */,
+			);
+			path = "UniPad-IOS15";
+			sourceTree = "<group>";
+		};
+		AEC10C43306685A200BB8329 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AEC10C44306685A200BB8329 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AEC10C4D306685A200BB8329 /* UniPad-IOS15Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AEC10C4E306685A200BB8329 /* UniPad_IOS15Tests.swift */,
+			);
+			path = "UniPad-IOS15Tests";
+			sourceTree = "<group>";
+		};
+		AEC10C57306685A200BB8329 /* UniPad-IOS15UITests */ = {
+			isa = PBXGroup;
+			children = (
+				AEC10C58306685A200BB8329 /* UniPad_IOS15UITests.swift */,
+				AEC10C5A306685A200BB8329 /* UniPad_IOS15UITestsLaunchTests.swift */,
+			);
+			path = "UniPad-IOS15UITests";
+			sourceTree = "<group>";
+		};
+		AEC4D9CA306F5C5B00C7B189 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE15C15B306FB50200002400 /* WorkspaceManager.swift */,
+				AEC4D9E7306F5C5C00C7B189 /* Audio */,
+				AEC4D9CB306F5C5B00C7B189 /* UniPackImporter.swift */,
+				AEC4D9CC306F5C5B00C7B189 /* ZipHelper.swift */,
+				AEC4D9CD306F5C5B00C7B189 /* ChainObserver.swift */,
+				AEC4D9CE306F5C5B00C7B189 /* LED */,
+				AEC4D9D1306F5C5B00C7B189 /* MIDI */,
+				AEC4D9E2306F5C5C00C7B189 /* FileManager+Extensions.swift */,
+				AEC4D9E3306F5C5C00C7B189 /* UniPackDownloader.swift */,
+				AEC4D9E4306F5C5C00C7B189 /* AutoPlay */,
+				AEC4D9ED306F5C5C00C7B189 /* Theme */,
+				AEC4D9F0306F5C5C00C7B189 /* PreferenceManager.swift */,
+				AEC4D9F1306F5C5C00C7B189 /* Analytics */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AEC4D9CE306F5C5B00C7B189 /* LED */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D9CF306F5C5B00C7B189 /* LedRunner.swift */,
+				AEC4D9D0306F5C5B00C7B189 /* ChannelManager.swift */,
+			);
+			path = LED;
+			sourceTree = "<group>";
+		};
+		AEC4D9D1306F5C5B00C7B189 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D9D2306F5C5B00C7B189 /* MidiManager.swift */,
+				AEC4D9D3306F5C5B00C7B189 /* Drivers */,
+				AEC4D9E0306F5C5B00C7B189 /* MidiBannerCoordinator.swift */,
+				AEC4D9E1306F5C5C00C7B189 /* MidiDriver.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		AEC4D9D3306F5C5B00C7B189 /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D9D4306F5C5B00C7B189 /* LaunchpadXDriver.swift */,
+				AEC4D9D5306F5C5B00C7B189 /* LaunchpadProDriver.swift */,
+				AEC4D9D6306F5C5B00C7B189 /* MasterKeyboardDriver.swift */,
+				AEC4D9D7306F5C5B00C7B189 /* LaunchpadMK2Driver.swift */,
+				AEC4D9D8306F5C5B00C7B189 /* LaunchpadProCFWDriver.swift */,
+				AEC4D9D9306F5C5B00C7B189 /* MidiFighterDriver.swift */,
+				AEC4D9DA306F5C5B00C7B189 /* MatrixDriver.swift */,
+				AEC4D9DB306F5C5B00C7B189 /* LaunchpadCoreCFWDriver.swift */,
+				AEC4D9DC306F5C5B00C7B189 /* LaunchpadMiniMK3Driver.swift */,
+				AEC4D9DD306F5C5B00C7B189 /* LaunchpadProMK3Driver.swift */,
+				AEC4D9DE306F5C5B00C7B189 /* GenericDriver.swift */,
+				AEC4D9DF306F5C5B00C7B189 /* LaunchpadSDriver.swift */,
+			);
+			path = Drivers;
+			sourceTree = "<group>";
+		};
+		AEC4D9E4306F5C5C00C7B189 /* AutoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D9E5306F5C5C00C7B189 /* AutoPlayRunner.swift */,
+				AEC4D9E6306F5C5C00C7B189 /* UniPackAutoMapper.swift */,
+			);
+			path = AutoPlay;
+			sourceTree = "<group>";
+		};
+		AEC4D9E7306F5C5C00C7B189 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D9E8306F5C5C00C7B189 /* UPObjCExceptionCatcher.h */,
+				AEC4D9E9306F5C5C00C7B189 /* ObjCExceptionCatch.swift */,
+				AEC4D9EA306F5C5C00C7B189 /* AudioSessionGate.swift */,
+				AEC4D9EB306F5C5C00C7B189 /* UPObjCExceptionCatcher.m */,
+				AEC4D9EC306F5C5C00C7B189 /* SoundEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		AEC4D9ED306F5C5C00C7B189 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D9EE306F5C5C00C7B189 /* ThemeManager.swift */,
+				AEC4D9EF306F5C5C00C7B189 /* ThemeResources.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AEC4D9F1306F5C5C00C7B189 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D9F2306F5C5C00C7B189 /* UsageAnalytics.swift */,
+				AEC4D9F3306F5C5C00C7B189 /* PlaySessionTracker.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		AEC4DA21306F5D2900C7B189 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA22306F5D2900C7B189 /* PlatformImage.swift */,
+				AEC4DA23306F5D2900C7B189 /* TraceLogText.swift */,
+				AEC4DA24306F5D2900C7B189 /* AppColors.swift */,
+				AEC4DA25306F5D2900C7B189 /* MPVolumeViewHelper.swift */,
+				AEC4DA26306F5D2900C7B189 /* LaunchpadColor.swift */,
+				AEC4DA27306F5D2900C7B189 /* NSLock+DeadlockDetection.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AEC4DA2E306F5D3D00C7B189 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA2F306F5D3D00C7B189 /* UniPackFolder.swift */,
+				AEC4DA30306F5D3D00C7B189 /* LedAnimation.swift */,
+				AEC4DA31306F5D3D00C7B189 /* UniPack.swift */,
+				AEC4DA32306F5D3D00C7B189 /* Sound.swift */,
+				AEC4DA33306F5D3D00C7B189 /* AutoPlay.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEC4DA3A306F633A00C7B189 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA3B306F633A00C7B189 /* SettingsViewModel.swift */,
+				AEC4DA3C306F633A00C7B189 /* MainViewModel.swift */,
+				AEC4DA3D306F633B00C7B189 /* StorageSetupViewModel.swift */,
+				AEC4DA3E306F633B00C7B189 /* StoreViewModel.swift */,
+				AEC4DA3F306F633B00C7B189 /* ThemeViewModel.swift */,
+				AEC4DA40306F633B00C7B189 /* PlayViewModel.swift */,
+			);
+			name = ViewModels;
+			path = "UniPad-IOS15/ViewModels";
+			sourceTree = SOURCE_ROOT;
+		};
+		AEC4DA41306F633B00C7B189 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA42306F633B00C7B189 /* Settings */,
+				AEC4DA44306F633B00C7B189 /* Splash */,
+				AEC4DA46306F633B00C7B189 /* StorageSetup */,
+				AEC4DA48306F633B00C7B189 /* Transfer */,
+				AEC4DA4A306F633B00C7B189 /* Components */,
+				AEC4DA50306F633B00C7B189 /* Theme */,
+				AEC4DA52306F633B00C7B189 /* MidiSelect */,
+				AEC4DA54306F633B00C7B189 /* New Group */,
+				AEC4DA55306F633B00C7B189 /* Play */,
+				AEC4DA5B306F633B00C7B189 /* Main */,
+				AEC4DA61306F633B00C7B189 /* Import */,
+				AEC4DA63306F633B00C7B189 /* Store */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEC4DA42306F633B00C7B189 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA43306F633B00C7B189 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AEC4DA44306F633B00C7B189 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA45306F633B00C7B189 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		AEC4DA46306F633B00C7B189 /* StorageSetup */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA47306F633B00C7B189 /* StorageSetupView.swift */,
+			);
+			path = StorageSetup;
+			sourceTree = "<group>";
+		};
+		AEC4DA48306F633B00C7B189 /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA49306F633B00C7B189 /* TransferView.swift */,
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
+		AEC4DA4A306F633B00C7B189 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA4B306F633B00C7B189 /* MidiConnectionBannerView.swift */,
+				AEC4DA4C306F633B00C7B189 /* TemporaryStoreNoticeView.swift */,
+				AEC4DA4D306F633B00C7B189 /* SearchBar.swift */,
+				AEC4DA4E306F633B00C7B189 /* MarqueeText.swift */,
+				AEC4DA4F306F633B00C7B189 /* LoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AEC4DA50306F633B00C7B189 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA51306F633B00C7B189 /* ThemeView.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AEC4DA52306F633B00C7B189 /* MidiSelect */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA53306F633B00C7B189 /* MidiSelectView.swift */,
+			);
+			path = MidiSelect;
+			sourceTree = "<group>";
+		};
+		AEC4DA54306F633B00C7B189 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		AEC4DA55306F633B00C7B189 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA56306F633B00C7B189 /* PlayView.swift */,
+				AEC4DA57306F633B00C7B189 /* ChainColumnView.swift */,
+				AEC4DA58306F633B00C7B189 /* PlayOptionPanel.swift */,
+				AEC4DA59306F633B00C7B189 /* PadGridView.swift */,
+				AEC4DA5A306F633B00C7B189 /* PadGridUIView.swift */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		AEC4DA5B306F633B00C7B189 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA5C306F633B00C7B189 /* UnipackListItemView.swift */,
+				AEC4DA5D306F633B00C7B189 /* MainTotalPanel.swift */,
+				AEC4DA5E306F633B00C7B189 /* ImportResultDialog.swift */,
+				AEC4DA5F306F633B00C7B189 /* MainPackPanel.swift */,
+				AEC4DA60306F633B00C7B189 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AEC4DA61306F633B00C7B189 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA62306F633B00C7B189 /* ImportByUrlView.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		AEC4DA63306F633B00C7B189 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA64306F633B00C7B189 /* StoreView.swift */,
+				AEC4DA65306F633B00C7B189 /* New Group */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		AEC4DA65306F633B00C7B189 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		AEC4DA83306F638100C7B189 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA84306F638100C7B189 /* AppRouter.swift */,
+				AEC4DA85306F638100C7B189 /* Route.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AEC4DA88306F63C100C7B189 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA89306F63C100C7B189 /* Localizable.strings */,
+				AEC4DA96306F63C100C7B189 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEC4DA91306F63C100C7B189 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DA92306F63C100C7B189 /* UniPadAPI.swift */,
+				AEC4DA93306F63C100C7B189 /* FirebaseManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AEC4DAA4306F63D000C7B189 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DAA5306F63D000C7B189 /* UnipackRepository.swift */,
+				AEC4DAA6306F63D000C7B189 /* UnipackEntity.swift */,
+				AEC4DAA7306F63D000C7B189 /* UnipadSchema.swift */,
+				AEC4DAA8306F63D000C7B189 /* ModelStoreStatus.swift */,
+				AEC4DAA9306F63D000C7B189 /* ModelContainerFactory.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		AEC4DAAF306F63DC00C7B189 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4DAB0306F63DC00C7B189 /* unipadApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEC10C39306685A000BB8329 /* UniPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC10C5E306685A200BB8329 /* Build configuration list for PBXNativeTarget "UniPad" */;
+			buildPhases = (
+				AEC10C36306685A000BB8329 /* Sources */,
+				AEC10C37306685A000BB8329 /* Frameworks */,
+				AEC10C38306685A000BB8329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniPad;
+			productName = "UniPad-IOS15";
+			productReference = AEC10C3A306685A000BB8329 /* UniPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEC10C49306685A200BB8329 /* UniPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC10C61306685A200BB8329 /* Build configuration list for PBXNativeTarget "UniPadTests" */;
+			buildPhases = (
+				AEC10C46306685A200BB8329 /* Sources */,
+				AEC10C47306685A200BB8329 /* Frameworks */,
+				AEC10C48306685A200BB8329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC10C4C306685A200BB8329 /* PBXTargetDependency */,
+			);
+			name = UniPadTests;
+			productName = "UniPad-IOS15Tests";
+			productReference = AEC10C4A306685A200BB8329 /* UniPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEC10C53306685A200BB8329 /* UniPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC10C64306685A200BB8329 /* Build configuration list for PBXNativeTarget "UniPadUITests" */;
+			buildPhases = (
+				AEC10C50306685A200BB8329 /* Sources */,
+				AEC10C51306685A200BB8329 /* Frameworks */,
+				AEC10C52306685A200BB8329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC10C56306685A200BB8329 /* PBXTargetDependency */,
+			);
+			name = UniPadUITests;
+			productName = "UniPad-IOS15UITests";
+			productReference = AEC10C54306685A200BB8329 /* UniPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEC10C32306685A000BB8329 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					AEC10C39306685A000BB8329 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					AEC10C49306685A200BB8329 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = AEC10C39306685A000BB8329;
+					};
+					AEC10C53306685A200BB8329 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = AEC10C39306685A000BB8329;
+					};
+				};
+			};
+			buildConfigurationList = AEC10C35306685A000BB8329 /* Build configuration list for PBXProject "UniPad" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				"zh-Hans",
+				ja,
+				es,
+				it,
+				ms,
+				ko,
+				fil,
+				my,
+				tr,
+				"pt-BR",
+				vi,
+				ru,
+				fr,
+				id,
+				th,
+				hi,
+			);
+			mainGroup = AEC10C31306685A000BB8329;
+			productRefGroup = AEC10C3B306685A000BB8329 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEC10C39306685A000BB8329 /* UniPad */,
+				AEC10C49306685A200BB8329 /* UniPadTests */,
+				AEC10C53306685A200BB8329 /* UniPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEC10C38306685A000BB8329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC4DAA3306F63C200C7B189 /* Localizable.strings in Resources */,
+				AEC4DAA0306F63C100C7B189 /* Localizable.strings in Resources */,
+				AE15C15E306FB56E00002400 /* Assets.xcassets in Resources */,
+				AEC4DAB5306F641100C7B189 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC10C48306685A200BB8329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC10C52306685A200BB8329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEC10C36306685A000BB8329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC4DA37306F5D3D00C7B189 /* Sound.swift in Sources */,
+				AEC4DA71306F633B00C7B189 /* TemporaryStoreNoticeView.swift in Sources */,
+				AEC4DA12306F5C5C00C7B189 /* ThemeResources.swift in Sources */,
+				AEC4DA87306F638100C7B189 /* Route.swift in Sources */,
+				AEC4DA0D306F5C5C00C7B189 /* ObjCExceptionCatch.swift in Sources */,
+				AEC4DA74306F633B00C7B189 /* LoadingView.swift in Sources */,
+				AEC4D9FE306F5C5C00C7B189 /* LaunchpadMK2Driver.swift in Sources */,
+				AEC10C40306685A000BB8329 /* ContentView.swift in Sources */,
+				AEC4DA7A306F633B00C7B189 /* PadGridView.swift in Sources */,
+				AEC4D9F6306F5C5C00C7B189 /* ZipHelper.swift in Sources */,
+				AEC4DA15306F5C5C00C7B189 /* PlaySessionTracker.swift in Sources */,
+				AEC4DA0C306F5C5C00C7B189 /* UniPackAutoMapper.swift in Sources */,
+				AEC4DA0B306F5C5C00C7B189 /* AutoPlayRunner.swift in Sources */,
+				AEC4D9FC306F5C5C00C7B189 /* LaunchpadProDriver.swift in Sources */,
+				AEC4DA6B306F633B00C7B189 /* PlayViewModel.swift in Sources */,
+				AEC4D9FF306F5C5C00C7B189 /* LaunchpadProCFWDriver.swift in Sources */,
+				AEC4D9FA306F5C5C00C7B189 /* MidiManager.swift in Sources */,
+				AEC4DA7D306F633B00C7B189 /* MainTotalPanel.swift in Sources */,
+				AEC4D9F8306F5C5C00C7B189 /* LedRunner.swift in Sources */,
+				AEC4DA68306F633B00C7B189 /* StorageSetupViewModel.swift in Sources */,
+				AEC4DA06306F5C5C00C7B189 /* LaunchpadSDriver.swift in Sources */,
+				AEC4DA10306F5C5C00C7B189 /* SoundEngine.swift in Sources */,
+				AEC4DA04306F5C5C00C7B189 /* LaunchpadProMK3Driver.swift in Sources */,
+				AEC4DA7C306F633B00C7B189 /* UnipackListItemView.swift in Sources */,
+				AEC4DA01306F5C5C00C7B189 /* MatrixDriver.swift in Sources */,
+				AEC4DA35306F5D3D00C7B189 /* LedAnimation.swift in Sources */,
+				AEC4DA6D306F633B00C7B189 /* SplashView.swift in Sources */,
+				AEC4DA79306F633B00C7B189 /* PlayOptionPanel.swift in Sources */,
+				AEC4DA67306F633B00C7B189 /* MainViewModel.swift in Sources */,
+				AEC4DA6A306F633B00C7B189 /* ThemeViewModel.swift in Sources */,
+				AEC4DA00306F5C5C00C7B189 /* MidiFighterDriver.swift in Sources */,
+				AEC4DA69306F633B00C7B189 /* StoreViewModel.swift in Sources */,
+				AEC4DAAE306F63D000C7B189 /* ModelContainerFactory.swift in Sources */,
+				AEC4DA38306F5D3D00C7B189 /* AutoPlay.swift in Sources */,
+				AEC4DAAB306F63D000C7B189 /* UnipackEntity.swift in Sources */,
+				AEC4D9F7306F5C5C00C7B189 /* ChainObserver.swift in Sources */,
+				AEC4DA2D306F5D2900C7B189 /* NSLock+DeadlockDetection.swift in Sources */,
+				AEC4DA6E306F633B00C7B189 /* StorageSetupView.swift in Sources */,
+				AEC4DAAC306F63D000C7B189 /* UnipadSchema.swift in Sources */,
+				AEC4DA09306F5C5C00C7B189 /* FileManager+Extensions.swift in Sources */,
+				AEC4DA6F306F633B00C7B189 /* TransferView.swift in Sources */,
+				AEC4DA73306F633B00C7B189 /* MarqueeText.swift in Sources */,
+				AEC4DA70306F633B00C7B189 /* MidiConnectionBannerView.swift in Sources */,
+				AEC4DA2B306F5D2900C7B189 /* MPVolumeViewHelper.swift in Sources */,
+				AEC4DA0E306F5C5C00C7B189 /* AudioSessionGate.swift in Sources */,
+				AEC4DA13306F5C5C00C7B189 /* PreferenceManager.swift in Sources */,
+				AEC4DA05306F5C5C00C7B189 /* GenericDriver.swift in Sources */,
+				AEC4DA82306F633B00C7B189 /* StoreView.swift in Sources */,
+				AEC4DA66306F633B00C7B189 /* SettingsViewModel.swift in Sources */,
+				AEC4DA7F306F633B00C7B189 /* MainPackPanel.swift in Sources */,
+				AEC4DA2A306F5D2900C7B189 /* AppColors.swift in Sources */,
+				AEC4DA14306F5C5C00C7B189 /* UsageAnalytics.swift in Sources */,
+				AEC4DA80306F633B00C7B189 /* MainView.swift in Sources */,
+				AEC4DAA1306F63C100C7B189 /* UniPadAPI.swift in Sources */,
+				AEC4D9FB306F5C5C00C7B189 /* LaunchpadXDriver.swift in Sources */,
+				AEC4DA76306F633B00C7B189 /* MidiSelectView.swift in Sources */,
+				AEC4DA0F306F5C5C00C7B189 /* UPObjCExceptionCatcher.m in Sources */,
+				AEC4DA6C306F633B00C7B189 /* SettingsView.swift in Sources */,
+				AEC10C3E306685A000BB8329 /* UniPad_IOS15App.swift in Sources */,
+				AEC4DA86306F638100C7B189 /* AppRouter.swift in Sources */,
+				AEC4DA0A306F5C5C00C7B189 /* UniPackDownloader.swift in Sources */,
+				AEC4DA07306F5C5C00C7B189 /* MidiBannerCoordinator.swift in Sources */,
+				AEC4DAAD306F63D000C7B189 /* ModelStoreStatus.swift in Sources */,
+				AEC4DA72306F633B00C7B189 /* SearchBar.swift in Sources */,
+				AEC4DAAA306F63D000C7B189 /* UnipackRepository.swift in Sources */,
+				AEC4DA7B306F633B00C7B189 /* PadGridUIView.swift in Sources */,
+				AEF57CB8306FACAC0042E59D /* FirebaseManager.swift in Sources */,
+				AEC4DA02306F5C5C00C7B189 /* LaunchpadCoreCFWDriver.swift in Sources */,
+				AEC4DA81306F633B00C7B189 /* ImportByUrlView.swift in Sources */,
+				AEC4DA29306F5D2900C7B189 /* TraceLogText.swift in Sources */,
+				AEC4DA28306F5D2900C7B189 /* PlatformImage.swift in Sources */,
+				AEC4DA78306F633B00C7B189 /* ChainColumnView.swift in Sources */,
+				AEC4DA08306F5C5C00C7B189 /* MidiDriver.swift in Sources */,
+				AEC4D9F9306F5C5C00C7B189 /* ChannelManager.swift in Sources */,
+				AE15C15C306FB50200002400 /* WorkspaceManager.swift in Sources */,
+				AEC4DA77306F633B00C7B189 /* PlayView.swift in Sources */,
+				AEC4D9F5306F5C5C00C7B189 /* UniPackImporter.swift in Sources */,
+				AEC4DA34306F5D3D00C7B189 /* UniPackFolder.swift in Sources */,
+				AEC4DA7E306F633B00C7B189 /* ImportResultDialog.swift in Sources */,
+				AEC4DA36306F5D3D00C7B189 /* UniPack.swift in Sources */,
+				AEC4DA03306F5C5C00C7B189 /* LaunchpadMiniMK3Driver.swift in Sources */,
+				AEC4DA75306F633B00C7B189 /* ThemeView.swift in Sources */,
+				AEC4D9FD306F5C5C00C7B189 /* MasterKeyboardDriver.swift in Sources */,
+				AEC4DA2C306F5D2900C7B189 /* LaunchpadColor.swift in Sources */,
+				AEC4DA11306F5C5C00C7B189 /* ThemeManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC10C46306685A200BB8329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC10C4F306685A200BB8329 /* UniPad_IOS15Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC10C50306685A200BB8329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC10C59306685A200BB8329 /* UniPad_IOS15UITests.swift in Sources */,
+				AEC10C5B306685A200BB8329 /* UniPad_IOS15UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEC10C4C306685A200BB8329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC10C39306685A000BB8329 /* UniPad */;
+			targetProxy = AEC10C4B306685A200BB8329 /* PBXContainerItemProxy */;
+		};
+		AEC10C56306685A200BB8329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC10C39306685A000BB8329 /* UniPad */;
+			targetProxy = AEC10C55306685A200BB8329 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEC4DA89306F63C100C7B189 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC4DA8A306F63C100C7B189 /* de */,
+				AEC4DA8B306F63C100C7B189 /* zh-Hans */,
+				AEC4DA8C306F63C100C7B189 /* ja */,
+				AEC4DA8D306F63C100C7B189 /* en */,
+				AEC4DA8E306F63C100C7B189 /* es */,
+				AEC4DA8F306F63C100C7B189 /* it */,
+				AEC4DA90306F63C100C7B189 /* ms */,
+				AEC4DA94306F63C100C7B189 /* ko */,
+				AEC4DA95306F63C100C7B189 /* fil */,
+				AEC4DA97306F63C100C7B189 /* my */,
+				AEC4DA98306F63C100C7B189 /* tr */,
+				AEC4DA99306F63C100C7B189 /* pt-BR */,
+				AEC4DA9A306F63C100C7B189 /* vi */,
+				AEC4DA9B306F63C100C7B189 /* ru */,
+				AEC4DA9C306F63C100C7B189 /* fr */,
+				AEC4DA9D306F63C100C7B189 /* id */,
+				AEC4DA9E306F63C100C7B189 /* th */,
+				AEC4DA9F306F63C100C7B189 /* hi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEC10C5C306685A200BB8329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEC10C5D306685A200BB8329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEC10C5F306685A200BB8329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UniPad-IOS15/Preview Content\"";
+				DEVELOPMENT_TEAM = L226238VAD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UniPad-IOS15/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inascx.UniPad.Port;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/UniPad-IOS15/Services/Audio/UniPad-IOS15-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEC10C60306685A200BB8329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UniPad-IOS15/Preview Content\"";
+				DEVELOPMENT_TEAM = L226238VAD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UniPad-IOS15/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inascx.UniPad.Port;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/UniPad-IOS15/Services/Audio/UniPad-IOS15-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEC10C62306685A200BB8329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inascx.UniPad-IOS15Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UniPad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UniPad";
+			};
+			name = Debug;
+		};
+		AEC10C63306685A200BB8329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inascx.UniPad-IOS15Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UniPad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UniPad";
+			};
+			name = Release;
+		};
+		AEC10C65306685A200BB8329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inascx.UniPad-IOS15UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UniPad-IOS15";
+			};
+			name = Debug;
+		};
+		AEC10C66306685A200BB8329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inascx.UniPad-IOS15UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UniPad-IOS15";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEC10C35306685A000BB8329 /* Build configuration list for PBXProject "UniPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC10C5C306685A200BB8329 /* Debug */,
+				AEC10C5D306685A200BB8329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC10C5E306685A200BB8329 /* Build configuration list for PBXNativeTarget "UniPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC10C5F306685A200BB8329 /* Debug */,
+				AEC10C60306685A200BB8329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC10C61306685A200BB8329 /* Build configuration list for PBXNativeTarget "UniPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC10C62306685A200BB8329 /* Debug */,
+				AEC10C63306685A200BB8329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC10C64306685A200BB8329 /* Build configuration list for PBXNativeTarget "UniPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC10C65306685A200BB8329 /* Debug */,
+				AEC10C66306685A200BB8329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEC10C32306685A000BB8329 /* Project object */;
+}
