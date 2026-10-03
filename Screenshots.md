@@ -13,7 +13,7 @@
 
 <p align="center">
   <img src="_PrintScreen_/iPad_Air2/main.png" width="32%" >
-  <img src="_PrintScreen_/iPad_air2/store.png" width="32%" >
+  <img src="_PrintScreen_/iPad_Air2/store.png" width="32%" >
   <img src="_PrintScreen_/iPad_Air2/play_default.png" width="32%" />
   <img src="_PrintScreen_/iPad_Air2/play_skin.png" width="32%" />
   <img src="_PrintScreen_/iPad_Air2/settings_information.png" width="32%" />
